@@ -2,7 +2,8 @@
   <div>
     <div v-for='(colItem, indexCol) in listColumns' :key='indexCol' :style='styleColumn'>
       <div v-for='(tabItem , indexTab) in colItem.tabs' :key='indexTab'>
-        <list-files v-bind:listFiles='getListFile(indexCol, indexTab)' v-bind:relativePath='targetPath(indexCol, indexTab)' v-bind:tabId='indexTab' v-bind:colId='indexCol'> </list-files>
+        <list-files v-bind:listFiles='getListFile(indexCol, indexTab)' v-bind:relativePath='targetPath(indexCol, indexTab)' v-bind:tabId='indexTab' v-bind:colId='indexCol'>
+        </list-files>
       </div>
     </div>
   </div>
